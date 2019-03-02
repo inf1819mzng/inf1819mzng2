@@ -1,0 +1,20 @@
+Libri
+Edizione non specificata se non specificato diversamente
+I libri con * non sono ancora presenti
+Analisi - Germinario:
+M. Bramanti C.Pagani S. Salsa, Analisi matematica 1, Zanichelli
+M. Bramanti, Esercitazioni di Analisi matematica 1, Società Editrice Esculapio
+
+Laboratorio - Rossano:
+*W.B. Kernighan, D.M. Ritchie: Il linguaggio C. Principi di programmazione e manuale di riferimento. Ed. Pearson
+P. Deitel e H. Deitel, Corso completo di programmazione. Ed. Apogeo
+(testo di riferimento per il linguaggio C) Deitel P. & H., "Il linguaggio C - Fondamenti e tecniche di programmazione", Ed. Pearson
+
+Inglese - Sportelli:
+*English in Computer Science and Mathematics, Publisher: Digilabs
+(Section 1: Grammar units, Section 2: Lessons)
+
+Linguaggi - Lops:
+G. Semeraro, Elementi di teoria dei linguaggi dormali, (2017) (anche le edizioni di prima vanno bene) ilmiolibro.it
+Maurizio Gabbrielli, Simone Martini, Linguaggi di Pprogrammazione, Principi e paradigmi, Seconda edizione mcgraw-hill
+"Libera scelta riguardo a manuali di C", slide originali di de gemmis
