@@ -1,0 +1,55 @@
+LABORATORIO DI INFORMATICA 2017/2018 - TRACK B
+Docente: Cataldo Musto
+
+ESERCITAZIONE 0  
+28.02.2018
+
+TRACCIA
+---------------
+Il Body Mass Index (BMI) è calcolato come il rapporto tra il peso e il quadrato dell’altezza (espresso in metri) di un individuo
+BMI = peso / (altezza-in-metri * altezza-in-metri)
+Gli individui sovrappeso hanno un BMI superiore a 25
+
+1. Scrivere un algoritmo che generi random età, altezza e peso di dieci individui e calcoli il BMI di ciascuno di essi e lo mostri sullo schermo.
+2. L’algoritmo deve calcolare il massimo di altezza e peso e la media del BMI , distinguendo over 40 e under 40
+3. L’algoritmo deve anche stampare in output i valori massimi di altezza e peso (per le due categorie) 
+4. L'algoritmo deve stampare un messaggio sullo schermo del tipo «Il campione è mediamente sovrappeso» oppure «il campione è mediamente sottopeso» a seconda che il BMI medio sia maggiore o minore di 25 (sia per gli under 40 che per gli over).
+
+INPUT
+---------------
+- Età, Altezza, Peso, generati random per 10 individui
+
+OUTPUT
+---------------
+- Altezza massima over 40, Altezza massima under 40
+- Peso massimo over 40, Peso massimo under 40
+- BMI medio over 40, BMI medio under 40
+
+NOTE
+---------------
+- Porre attenzione allo stile di programmazione (nomenclatura, costanti simboliche e indentazione)
+- Porre attenzione a scrivere commenti
+- Porre attenzione alla programmazione difensiva (il programma funziona anche nei casi "limite" ?)
+
+SUGGERIMENTI
+---------------
+Per la generazione di un numero random in un range tra MIN e MAX utilizzare il seguente frammento di codice
+
+#include "stdlib.h" // libreria che include la funzione rand()
+#include "time.h" // libreria per randomizzare il seed
+
+int seed = time(NULL);
+srand(seed);
+int randomValue = rand() % (MAX-MIN+1) + MIN; 
+
+Se vogliamo generare un numero tra 10 e 30 la funzione sarà
+int randomValue = rand() % 21 + 10; 
+
+Perchè l'operatore % ci restituisce un valore tra 0 e 20, cui sommeremo 10 che è il valore minimo possibile.
+
+ESTENSIONI
+---------------
+Modificare l’algoritmo utilizzando un valore sentinella invece di un ciclo con valore predefinito
+
+
+
