@@ -1,0 +1,81 @@
+LABORATORIO DI INFORMATICA 2018/2019 - TRACK B
+Docente: Veronica Rossano
+
+ESERCITAZIONE 0  
+13.02.2019
+
+TRACCIA
+---------------
+Scrivere un algoritmo che consenta al pc e all'utente di sfidarsi in una pseudo battaglia navale.
+
+
+PREMESSE - REGOLE DEL GIOCO
+
+La battaglia navale è un gioco di carta e matita per due giocatori, estremamente popolare e diffuso in tutto il mondo. È stato anche commercializzato come gioco da tavolo da diverse case editrici di giochi, tra cui la Milton Bradley. 
+
+Per giocare a battaglia navale occorrono quattro tabelle (due per giocatore), tutte di uguali dimensioni (per esempio 10×10 o un'altra dimensione concordata dai giocatori). I quadretti della tabella sono identificate da coppie di coordinate, corrispondenti a riga e colonna; tradizionalmente si usano lettere per le colonne e numeri per le righe (perciò le celle sono "A-1", "B-6", e così via). All'inizio, i giocatori devono "posizionare le proprie navi" segnandole su una delle loro due griglie (che terranno nascoste all'avversario per tutta la durata del gioco).
+
+Una "nave" occupa un certo numero di quadretti adiacenti in linea retta (orizzontale o verticale) sulla tabella. Due navi non possono toccarsi. I giocatori si accordano preliminarmente su quante navi disporre e di quali dimensioni. Si può notare che molti giocatori utilizzano (anche non sempre in modo consistente) una particolare terminologia per riferirsi alle navi delle varie dimensioni; per esempio un sottomarino è di solito una nave di dimensione 3, insieme all'incrociatore, un cacciatorpediniere è di dimensione 2 e le navi di lunghezza superiore sono corazzate (dimensione 4) e portaerei (dimensione 5).
+
+Una volta posizionate le navi, il gioco procede a turni. Il giocatore di turno "spara un colpo" dichiarando un quadretto (per esempio, "B-5"). L'avversario controlla sulla propria griglia se quella cella è occupata da una sua nave. In caso affermativo risponde "colpito!", e marca quel quadretto sulla propria tabella; in caso negativo risponde "acqua" o "mancato". Sulla seconda tabella in dotazione i giocatori prendono nota dei colpi che hanno sparato e del loro esito. Quando un colpo centra l'ultimo quadretto di una nave non ancora affondata, il giocatore che subisce il colpo dovrà dichiarare "colpito e affondato!", e la nave si considera persa. Vince il giocatore che per primo affonda tutte le navi dell'avversario.(Fonte wikipedia)
+
+
+
+VARIANTE
+
+1. In questa variante consideriamo che l'utente sfidi il computer cercando di indovinare dove il computer ha sistemato le navi, tutte di dimensione una (nr. 1) casella 
+2. Il computer, sistema nr. 6 navi di dimensione 1 (una casella), in maniera casuale ad ogni partita.
+3. L'utente ha 10 possibilità per affondare quante più navi possibile al pc.
+
+VINCOLI
+a. Usare gli array bidimensionali di dimensione 6 X 6 
+b. L'utente deve poter fare la propria mossa indicando la coppia (colonna riga) nella forma A1 oppure F5 come da gioco tradizionale.
+
+
+
+INPUT
+---------------
+- per ogni partita coppie (colonna riga), ad esempio A1, F-4, b5.
+
+OUTPUT
+---------------
+- Messaggi opportuni: Nave affondata, Nave non colpita, Partita terminata con nr. x punti
+- Tabella con le navi per consentire all'utente di controllare che il pc sia stato onesto (!!!)
+
+NOTE
+---------------
+- Porre attenzione allo stile di programmazione (nomenclatura, costanti simboliche e indentazione)
+- Porre attenzione a scrivere commenti
+- Porre attenzione alla programmazione difensiva (il programma funziona anche nei casi "limite" ?)(il programma funziona anche se l'utente inserisce dati sbagliati)
+
+SUGGERIMENTI
+---------------
+Per la generazione di un numero random in un range è possibile riutilizzare il codice già utilizzato nel calcolo del BMI con qualche variazione.
+
+Se vogliamo generare un numero tra 0 e 5 la funzione potrà essere
+
+int randomValue = rand() % 6 ; 
+
+
+Per convertire una lettera minuscola in maiuscola è possibile usare la funzione 
+
+int toupper(int) inclusa nella libreria <ctype.h>
+
+Quindi, preso un input da tastiera per convertirlo in maiuscolo il codice è:
+
+			char variabile;
+			scanf("\n%c", &variabile);
+			variabile=toupper(variabile);
+
+
+Il codice ASCII delle lettere maiuscole A - F sono i numeri che partono dal 65 (A=65, B=66, C=67...)
+NB: se la lettera è maiuscola comunque restituisce la stessa lettera maiuscola.
+
+
+
+ESTENSIONI
+---------------
+
+
+
+
