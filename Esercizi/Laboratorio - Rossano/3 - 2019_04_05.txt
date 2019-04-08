@@ -1,0 +1,71 @@
+LABORATORIO DI INFORMATICA 2017/2018 - TRACK B
+Docente: Veronica Rossano
+
+ESERCITAZIONE 3  
+08.04.2018
+Consegna: GiovedÏ 8 Aprile, ore 18.00
+
+TRACCIA
+---------------
+Creare una struct film, contenente informazioni e attributi s
+u un film (es. titolo, anno, durata, etc.).
+Scegliere liberamente gli attributi, cercando di rendere realistico il tipo di dato.
+Creare una struct utente, contenente informazioni anagrafiche sugli utenti 
+(es. nome, cognome, data di nascita). Riprendere la struttura gi‡ utilizzata.
+Creare due variabili archivio_film (dimensione 10) e utenti (dimensione 50).
+
+Scrivere un programma che
+(1) Generi random Nome, Cognome e Data di Nascita
+(2) Inizializzi la variabile 'archivio_film' con valori realistici (non generati random)
+(3) Generi random un set di 100 'preferenze' (es. utente 1 gradisce film 'the matrix').
+ Le preferenze sono di tipo binario 'si/no'. 
+ Progettare il tipo di dato "preferenze" nel modo pi˘ adeguato. Le preferenze non possono essere ripetute, ovviamente.
+
+Il programma deve poi implementare ñ attraverso un menu a scelta multipla 
+- le seguenti funzioni:
+(4) Inserimento nuove preferenze utente
+(5) Modifica preferenze utente
+(6) Visualizzazione dell'utente che ha espresso pi˘ like in totale e di quello che 
+ha espresso pi˘ like in percentuale
+(7) Visualizzazione dei tre film pi˘ graditi (quelli che hanno ricevuto pi˘ like)
+(8) Ricerca film (a partire dal nome) e visualizzazione delle relative statistiche (
+quanti like ha ricevuto in totale, e quanti in percentuale)
+
+INPUT
+----
+- 50 utenti, 10 film e 100 preferenze. 
+Film letti dal codice, utenti e preferenze generati random
+
+OUTPUT
+----
+- Nome dell'utente che ha espresso pi˘ like in totale e in percentuale
+- Nomi dei tre film pi˘ graditi
+- Visualizzazione Statistiche relative a un film
+- Inserimento e Modifica preferenze
+
+NOTE
+---------------
+Implementare tutte le funzioni seguendo i principi della programmazione modulare, 
+progettando correttamente moduli e funzioni.  
+Commentare adeguatamente il codice, spiegando le scelte di progetto
+La funzionalit‡ (4) deve chiedere all'utente un identificativo dell'utente 
+(un nome, o un codice univoco) e un identificativo del film (un nome, o un codice).
+ La preferenza sar‡ accodata a quelle esistenti.
+La funzionalit‡ (5) deve chiedere allíutente líidentificativo del film 
+e quello dellíutente OPPURE il numero sequenziale della preferenza da modificare
+Continuare a seguire i principi di stile di programmazione
+
+SUGGERIMENTI
+---------------
+- Per facilitare l'implementazione, aggiungere un campo ID a film e utenti
+- Riusare il codice gi‡ implementato per la generazione dei valori random
+
+ESTENSIONI
+---------------
+(9) Aggiungere un campo 'password' all'utente. 
+La password deve essere composta dalle prime tre lettere del nome, 
+le prime tre del cognome e due simboli generati random. 
+
+Tutte le funzionalit‡ di inserimento, modifica e cancellazione devono
+prevedere l'inserimento della password per poter essere effettuate, 
+viceversa bisogna mostrare un messaggio di errore.
